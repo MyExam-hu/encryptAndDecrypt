@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="tableView" destination="nOJ-CH-ghr" id="1ql-Zo-Cpm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nOJ-CH-ghr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WR3-6n-ClL"/>
+                        <outlet property="delegate" destination="-1" id="VNA-b4-8mK"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nOJ-CH-ghr" secondAttribute="trailing" id="DLW-uf-k8e"/>
+                <constraint firstItem="nOJ-CH-ghr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jsL-g1-3d0"/>
+                <constraint firstItem="nOJ-CH-ghr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rkD-bv-H6H"/>
+                <constraint firstAttribute="bottom" secondItem="nOJ-CH-ghr" secondAttribute="bottom" id="wKa-oZ-hnF"/>
+            </constraints>
+            <point key="canvasLocation" x="247" y="332"/>
+        </view>
+    </objects>
+</document>
