@@ -55,6 +55,8 @@
     
     if (![clsOtherFun theTableIsExist:TABLEINFO_TABLE]) {
         [clsTableInfo createTable];
+        
+        NSLog(@"测试提交");
     }
     
     if (![clsOtherFun theTableIsExist:USER_INFO_TABLE]) {
