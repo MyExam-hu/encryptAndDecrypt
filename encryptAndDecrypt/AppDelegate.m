@@ -30,6 +30,7 @@
     self.window.rootViewController=nav;
     [self.window makeKeyAndVisible];
     
+    //ceshi
     return YES;
 }
 
