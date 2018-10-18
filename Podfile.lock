@@ -21,12 +21,16 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
   - GRMustache
   - Masonry
   - SDWebImage
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -35,6 +39,7 @@ SPEC REPOS:
     - JRSwizzle
     - Masonry
     - SDWebImage
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -42,7 +47,8 @@ SPEC CHECKSUMS:
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: ce2a8ba8434d37beae605ad6b88e5744b56ea4b4
+PODFILE CHECKSUM: 46199f744b1694b465a82bcbaf597511e1276810
 
 COCOAPODS: 1.6.0.beta.1

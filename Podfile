@@ -7,4 +7,5 @@ target 'encryptAndDecrypt' do
     pod 'Masonry'
     pod 'AFNetworking'
     pod 'SDWebImage'
+    pod 'YYKit'
 end
