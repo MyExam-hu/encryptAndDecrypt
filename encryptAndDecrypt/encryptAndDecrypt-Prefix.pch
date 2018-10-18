@@ -8,6 +8,7 @@
 
 #import <Masonry.h>
 #import "SLUIColor.h"
+#import "SLEasyDefine.h"
 
 #ifndef encryptAndDecrypt_Prefix_pch
 #define encryptAndDecrypt_Prefix_pch
