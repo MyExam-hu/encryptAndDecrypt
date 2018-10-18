@@ -1,2 +1,9 @@
-platform :ios, '7.0' 
-pod 'GRMustache'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+target 'encryptAndDecrypt' do
+    pod 'GRMustache'
+    pod 'Masonry'
+
+end
