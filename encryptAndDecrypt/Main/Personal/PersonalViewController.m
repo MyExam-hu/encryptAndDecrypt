@@ -8,6 +8,7 @@
 
 #import "PersonalViewController.h"
 #import "GRMustache.h"
+#import "JPUserViewController.h"
 
 @interface PersonalViewController ()
 
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view from its nib.
     NSString *path=[[NSBundle mainBundle] bundlePath];
     NSURL *baseURL=[NSURL fileURLWithPath:path];
@@ -27,6 +30,27 @@
     [self.webView loadHTMLString:htmlString baseURL:baseURL];
     //加载js
     [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"js"] encoding:NSUTF8StringEncoding error:nil]];
+    
+    
+    UIView *textV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    textV.backgroundColor = [UIColor orangeColor];
+    textV.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickTextVeiw)];
+    [textV addGestureRecognizer:tap];
+    
+    [self.view addSubview:textV];
+    
+}
+
+- (void)clickTextVeiw {
+    
+    NSLog(@"a");
+    
+    JPUserViewController *vc = [JPUserViewController new];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

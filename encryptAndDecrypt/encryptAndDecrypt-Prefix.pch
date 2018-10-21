@@ -18,4 +18,9 @@
 #define Screen_Width [[UIScreen mainScreen] bounds].size.width
 #define Screen_Height [[UIScreen mainScreen] bounds].size.height
 
+#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define UserImagePath  [NSString stringWithFormat:@"%@/Documents/userImage.png",NSHomeDirectory()]
+
 #endif /* encryptAndDecrypt_Prefix_pch */
