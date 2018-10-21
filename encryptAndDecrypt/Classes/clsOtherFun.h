@@ -28,4 +28,6 @@
 +(NSDate *)stringFormatToDate:(NSString *)pDate;
 +(NSDate *)getNowDate;
 
++(NSString*)getWSURL:(NSString *)url;
+
 @end
