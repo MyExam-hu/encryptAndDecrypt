@@ -84,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		068401D846117E8131EBB31B /* Pods-encryptAndDecrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.release.xcconfig"; path = "Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.release.xcconfig"; sourceTree = "<group>"; };
+		160E13FB982EC9B25D536049 /* Pods-encryptAndDecrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.release.xcconfig"; sourceTree = "<group>"; };
 		4F3371B4F9AAA92F9D3B8949 /* Pods-encryptAndDecrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.debug.xcconfig"; path = "Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.debug.xcconfig"; sourceTree = "<group>"; };
 		B42D63EA1CBDD9A500284E04 /* encryptAndDecrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encryptAndDecrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42D63EE1CBDD9A500284E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -218,6 +219,7 @@
 		B4AA522121788C5B00A4ABD5 /* SLFitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLFitHeader.h; sourceTree = "<group>"; };
 		B4AA522221788C5B00A4ABD5 /* SLDelegateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDelegateHeader.h; sourceTree = "<group>"; };
 		C9BCA243183E6806B9E5A617 /* libPods-encryptAndDecrypt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-encryptAndDecrypt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90EE810DC203BBBD593226A /* Pods-encryptAndDecrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,8 @@
 			children = (
 				4F3371B4F9AAA92F9D3B8949 /* Pods-encryptAndDecrypt.debug.xcconfig */,
 				068401D846117E8131EBB31B /* Pods-encryptAndDecrypt.release.xcconfig */,
+				E90EE810DC203BBBD593226A /* Pods-encryptAndDecrypt.debug.xcconfig */,
+				160E13FB982EC9B25D536049 /* Pods-encryptAndDecrypt.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -569,6 +573,8 @@
 				B42D63E61CBDD9A400284E04 /* Sources */,
 				B42D63E71CBDD9A400284E04 /* Frameworks */,
 				B42D63E81CBDD9A400284E04 /* Resources */,
+				427E1AEB8F2DE772E2260E74 /* [CP] Embed Pods Frameworks */,
+				C6C5E50E3EFD70D651A7DA5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -657,6 +663,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427E1AEB8F2DE772E2260E74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C5E50E3EFD70D651A7DA5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
