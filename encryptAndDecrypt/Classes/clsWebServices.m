@@ -33,10 +33,10 @@
     self = [super init];
     if (self) {
         self.manager=[AFHTTPSessionManager manager];
-        self.manager.requestSerializer=[AFJSONRequestSerializer serializer];
-        self.manager.requestSerializer.timeoutInterval=30;
-        self.manager.responseSerializer=[AFJSONResponseSerializer serializer];
-        self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
+//        self.manager.requestSerializer=[AFJSONRequestSerializer serializer];
+//        self.manager.requestSerializer.timeoutInterval=30;
+//        self.manager.responseSerializer=[AFJSONResponseSerializer serializer];
+//        self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
     }
     return self;
 }

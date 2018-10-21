@@ -62,8 +62,7 @@
 //右边的内容 比如 姓名 地址 手机 等的具体内容
 - (UILabel *)contentLabel {
     if (_contentLabel == nil) {
-        _contentLabel = [[UILabel alloc]initWithFrame:CGRectMake(56+2, 16, SCREEN_WIDTH-5
-                                                                 8-16, 32)];
+        _contentLabel = [[UILabel alloc]initWithFrame:CGRectMake(56+2, 16, SCREEN_WIDTH-58-16, 32)];
         _contentLabel.font = [UIFont systemFontOfSize:16];
     }
     return _contentLabel;
