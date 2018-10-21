@@ -13,5 +13,7 @@
 @property(nonatomic, strong)UINavigationController* currentController;
 @property(nonatomic, assign) NSInteger selectIndex;
 @property (strong, nonatomic) UIView * contentView;
+@property (weak, nonatomic) IBOutlet UIView *navBar;
+//@property (weak, nonatomic) IBOutlet UIView *bottomBar;
 
 @end

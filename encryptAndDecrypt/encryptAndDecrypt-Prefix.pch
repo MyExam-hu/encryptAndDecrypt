@@ -11,7 +11,13 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MCThemeManage.h"
+
+#define StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define Screen_Width [[UIScreen mainScreen] bounds].size.width
 #define Screen_Height [[UIScreen mainScreen] bounds].size.height
+
+#define TopBarHeight 44.0
 
 #endif /* encryptAndDecrypt_Prefix_pch */
