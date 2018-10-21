@@ -14,6 +14,7 @@
 #import "MainViewController.h"
 #import "AES.h"
 #import "clsTableInfo.h"
+#import "clsWebServices.h"
 
 #define PLACE_COLOR [UIColor colorWithRed:129/255.0 green:108/255.0 blue:149/255.0 alpha:1]
 
@@ -27,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UIView *passwordView;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (weak, nonatomic) IBOutlet UIButton *loginWithFacebookBtn;
+
+@property (strong, nonatomic) clsWebServices *webServices;
 
 @end
 
@@ -80,6 +83,9 @@
         }
     }
     [clsUserEncryptInfo selectData];
+    
+    self.webServices = [[clsWebServices alloc] init];
+    [self.webServices controlSDKSwitch];
 }
 
 - (void)didReceiveMemoryWarning {

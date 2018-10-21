@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1622873A217C799A00F06BD7 /* JPUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16228739217C799A00F06BD7 /* JPUserViewController.m */; };
+		16228741217C7B0200F06BD7 /* userTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1622873F217C7B0200F06BD7 /* userTableViewCell.m */; };
+		16401A1C217C7BA8002F291D /* userHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16401A1A217C7BA7002F291D /* userHeadView.m */; };
+		16401A1F217C7BDC002F291D /* userModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16401A1E217C7BDC002F291D /* userModel.m */; };
+		16E2D588217C9F32007D756A /* JPSetNewNameOrSignatureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E2D587217C9F32007D756A /* JPSetNewNameOrSignatureVC.m */; };
 		3594C85B72D81485C6500047 /* libPods-encryptAndDecrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BCA243183E6806B9E5A617 /* libPods-encryptAndDecrypt.a */; };
+		5F1C62BC217CB36B006760F2 /* clsWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C62BB217CB36B006760F2 /* clsWebServices.m */; };
+		5F1C62BF217CB598006760F2 /* clsResponseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C62BD217CB597006760F2 /* clsResponseResult.m */; };
 		B42D63EF1CBDD9A500284E04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D63EE1CBDD9A500284E04 /* main.m */; };
 		B42D63F21CBDD9A500284E04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D63F11CBDD9A500284E04 /* AppDelegate.m */; };
 		B42D63FA1CBDD9A500284E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42D63F91CBDD9A500284E04 /* Assets.xcassets */; };
@@ -84,8 +91,21 @@
 
 /* Begin PBXFileReference section */
 		068401D846117E8131EBB31B /* Pods-encryptAndDecrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.release.xcconfig"; path = "Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.release.xcconfig"; sourceTree = "<group>"; };
-		160E13FB982EC9B25D536049 /* Pods-encryptAndDecrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.release.xcconfig"; sourceTree = "<group>"; };
+		16228738217C799A00F06BD7 /* JPUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPUserViewController.h; sourceTree = "<group>"; };
+		16228739217C799A00F06BD7 /* JPUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPUserViewController.m; sourceTree = "<group>"; };
+		1622873F217C7B0200F06BD7 /* userTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userTableViewCell.m; sourceTree = "<group>"; };
+		16228740217C7B0200F06BD7 /* userTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userTableViewCell.h; sourceTree = "<group>"; };
+		16401A1A217C7BA7002F291D /* userHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userHeadView.m; sourceTree = "<group>"; };
+		16401A1B217C7BA7002F291D /* userHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userHeadView.h; sourceTree = "<group>"; };
+		16401A1D217C7BDC002F291D /* userModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userModel.h; sourceTree = "<group>"; };
+		16401A1E217C7BDC002F291D /* userModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userModel.m; sourceTree = "<group>"; };
+		16E2D586217C9F32007D756A /* JPSetNewNameOrSignatureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPSetNewNameOrSignatureVC.h; sourceTree = "<group>"; };
+		16E2D587217C9F32007D756A /* JPSetNewNameOrSignatureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPSetNewNameOrSignatureVC.m; sourceTree = "<group>"; };
 		4F3371B4F9AAA92F9D3B8949 /* Pods-encryptAndDecrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.debug.xcconfig"; path = "Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		5F1C62BA217CB36B006760F2 /* clsWebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clsWebServices.h; sourceTree = "<group>"; };
+		5F1C62BB217CB36B006760F2 /* clsWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsWebServices.m; sourceTree = "<group>"; };
+		5F1C62BD217CB597006760F2 /* clsResponseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsResponseResult.m; sourceTree = "<group>"; };
+		5F1C62BE217CB598006760F2 /* clsResponseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clsResponseResult.h; sourceTree = "<group>"; };
 		B42D63EA1CBDD9A500284E04 /* encryptAndDecrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encryptAndDecrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42D63EE1CBDD9A500284E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B42D63F01CBDD9A500284E04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -219,7 +239,6 @@
 		B4AA522121788C5B00A4ABD5 /* SLFitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLFitHeader.h; sourceTree = "<group>"; };
 		B4AA522221788C5B00A4ABD5 /* SLDelegateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDelegateHeader.h; sourceTree = "<group>"; };
 		C9BCA243183E6806B9E5A617 /* libPods-encryptAndDecrypt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-encryptAndDecrypt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E90EE810DC203BBBD593226A /* Pods-encryptAndDecrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +254,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1622873B217C79D000F06BD7 /* JPUserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1622873E217C79F600F06BD7 /* C */,
+				1622873D217C79F100F06BD7 /* V */,
+				1622873C217C79E700F06BD7 /* M */,
+			);
+			path = JPUserViewController;
+			sourceTree = "<group>";
+		};
+		1622873C217C79E700F06BD7 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				16401A1D217C7BDC002F291D /* userModel.h */,
+				16401A1E217C7BDC002F291D /* userModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1622873D217C79F100F06BD7 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				16401A1B217C7BA7002F291D /* userHeadView.h */,
+				16401A1A217C7BA7002F291D /* userHeadView.m */,
+				16228740217C7B0200F06BD7 /* userTableViewCell.h */,
+				1622873F217C7B0200F06BD7 /* userTableViewCell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1622873E217C79F600F06BD7 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				16228738217C799A00F06BD7 /* JPUserViewController.h */,
+				16228739217C799A00F06BD7 /* JPUserViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		16E2D585217C8187007D756A /* JPSetNewNameOrSignature */ = {
+			isa = PBXGroup;
+			children = (
+				16E2D586217C9F32007D756A /* JPSetNewNameOrSignatureVC.h */,
+				16E2D587217C9F32007D756A /* JPSetNewNameOrSignatureVC.m */,
+			);
+			path = JPSetNewNameOrSignature;
+			sourceTree = "<group>";
+		};
 		3522408A03868F8F7BAF6E40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,8 +315,6 @@
 			children = (
 				4F3371B4F9AAA92F9D3B8949 /* Pods-encryptAndDecrypt.debug.xcconfig */,
 				068401D846117E8131EBB31B /* Pods-encryptAndDecrypt.release.xcconfig */,
-				E90EE810DC203BBBD593226A /* Pods-encryptAndDecrypt.debug.xcconfig */,
-				160E13FB982EC9B25D536049 /* Pods-encryptAndDecrypt.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -307,6 +372,10 @@
 		B42D640A1CBE23C600284E04 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5F1C62BE217CB598006760F2 /* clsResponseResult.h */,
+				5F1C62BD217CB597006760F2 /* clsResponseResult.m */,
+				5F1C62BA217CB36B006760F2 /* clsWebServices.h */,
+				5F1C62BB217CB36B006760F2 /* clsWebServices.m */,
 				B44472FD1CBF35B3005B8662 /* clsOtherFun.h */,
 				B44472FE1CBF35B3005B8662 /* clsOtherFun.m */,
 				B42D64211CBE299F00284E04 /* operationsDB.h */,
@@ -415,6 +484,8 @@
 		B444730A1CBF6406005B8662 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				16E2D585217C8187007D756A /* JPSetNewNameOrSignature */,
+				1622873B217C79D000F06BD7 /* JPUserViewController */,
 				B440BB071CEC1561005D0A30 /* Search */,
 				B444732D1CBF6FBF005B8662 /* Home */,
 				B444732E1CBF6FBF005B8662 /* Personal */,
@@ -573,6 +644,8 @@
 				B42D63E61CBDD9A400284E04 /* Sources */,
 				B42D63E71CBDD9A400284E04 /* Frameworks */,
 				B42D63E81CBDD9A400284E04 /* Resources */,
+				09C8227F7ADD2E8AABF9F26E /* [CP] Embed Pods Frameworks */,
+				462D967E9B0073A906202F81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -594,6 +667,7 @@
 				TargetAttributes = {
 					B42D63E91CBDD9A400284E04 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G583SJY324;
 					};
 				};
 			};
@@ -645,6 +719,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09C8227F7ADD2E8AABF9F26E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3F3D971D1582DAB4498AC23A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -663,6 +752,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		462D967E9B0073A906202F81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -671,12 +775,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B444731C1CBF68D4005B8662 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				5F1C62BC217CB36B006760F2 /* clsWebServices.m in Sources */,
 				B44472F31CBF2756005B8662 /* NSObject+MJCoding.m in Sources */,
 				B44473461CBF9B06005B8662 /* RWLabel.m in Sources */,
 				B44472F11CBF2756005B8662 /* MJPropertyType.m in Sources */,
 				B44472ED1CBF2756005B8662 /* MJExtensionConst.m in Sources */,
 				B44472F01CBF2756005B8662 /* MJPropertyKey.m in Sources */,
 				B4AA520D217886F800A4ABD5 /* FCHVarietyStyleLoadingView.m in Sources */,
+				5F1C62BF217CB598006760F2 /* clsResponseResult.m in Sources */,
 				B44472F41CBF2756005B8662 /* NSObject+MJKeyValue.m in Sources */,
 				B44C80AE1CE9A827005B9440 /* MBProgressHUD.m in Sources */,
 				B42D63F21CBDD9A500284E04 /* AppDelegate.m in Sources */,
@@ -684,16 +790,20 @@
 				B44472FF1CBF35B3005B8662 /* clsOtherFun.m in Sources */,
 				B42D641B1CBE285000284E04 /* FMDatabasePool.m in Sources */,
 				B44472EE1CBF2756005B8662 /* MJFoundation.m in Sources */,
+				16401A1F217C7BDC002F291D /* userModel.m in Sources */,
 				B44473121CBF66E4005B8662 /* clsUserEncryptInfo.m in Sources */,
 				B4AA520C217886F800A4ABD5 /* FCHLoadingView.m in Sources */,
 				B4AA5217217889F100A4ABD5 /* FCHRefreshIconView.m in Sources */,
 				B44472F61CBF2756005B8662 /* NSString+MJExtension.m in Sources */,
 				B44C12601CDB49A0000AE969 /* NoteViewController.m in Sources */,
+				1622873A217C799A00F06BD7 /* JPUserViewController.m in Sources */,
 				B4AA520A217886F800A4ABD5 /* FCHCameraLoadingView.m in Sources */,
+				16E2D588217C9F32007D756A /* JPSetNewNameOrSignatureVC.m in Sources */,
 				B44472EF1CBF2756005B8662 /* MJProperty.m in Sources */,
 				B4AA52102178872F00A4ABD5 /* FCHActivityCeterLoadingView.m in Sources */,
 				B444731D1CBF68D4005B8662 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				B44473421CBF9348005B8662 /* HomeTableViewCell.m in Sources */,
+				16401A1C217C7BA8002F291D /* userHeadView.m in Sources */,
 				B44473381CBF7023005B8662 /* PersonalViewController.m in Sources */,
 				B444732B1CBF6CE2005B8662 /* NSData+CommonCrypto.m in Sources */,
 				B444730E1CBF6437005B8662 /* MainViewController.m in Sources */,
@@ -703,6 +813,7 @@
 				B444732A1CBF6CE2005B8662 /* NSData+Base64.m in Sources */,
 				B444731F1CBF68D4005B8662 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				B44C80B11CE9B5B1005B9440 /* AddDataView.m in Sources */,
+				16228741217C7B0200F06BD7 /* userTableViewCell.m in Sources */,
 				B4AA521D21788A5E00A4ABD5 /* UIImage+FCHRotateFlip.m in Sources */,
 				B444732C1CBF6CE2005B8662 /* NSString+Base64.m in Sources */,
 				B42D641C1CBE285000284E04 /* FMDatabaseQueue.m in Sources */,
@@ -823,9 +934,10 @@
 		};
 		B42D64021CBDD9A500284E04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E90EE810DC203BBBD593226A /* Pods-encryptAndDecrypt.debug.xcconfig */;
+			baseConfigurationReference = 4F3371B4F9AAA92F9D3B8949 /* Pods-encryptAndDecrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G583SJY324;
 				GCC_PREFIX_HEADER = "encryptAndDecrypt/encryptAndDecrypt-Prefix.pch";
 				INFOPLIST_FILE = encryptAndDecrypt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -838,9 +950,10 @@
 		};
 		B42D64031CBDD9A500284E04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 160E13FB982EC9B25D536049 /* Pods-encryptAndDecrypt.release.xcconfig */;
+			baseConfigurationReference = 068401D846117E8131EBB31B /* Pods-encryptAndDecrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G583SJY324;
 				GCC_PREFIX_HEADER = "encryptAndDecrypt/encryptAndDecrypt-Prefix.pch";
 				INFOPLIST_FILE = encryptAndDecrypt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
