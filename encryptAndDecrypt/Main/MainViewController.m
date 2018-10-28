@@ -27,6 +27,27 @@
     self.contentView=nav.view;
     [self.view addSubview: self.contentView];
     self.currentController=[self.childViewControllers firstObject];
+    
+//    self.bottomBar = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 50, self.view.bounds.size.width, 50)];
+//    self.bottomBar.backgroundColor = self.navBar.backgroundColor;
+//    [self.view addSubview:self.bottomBar];
+//    for (NSInteger i = 0; i < 3; i++) {
+//        UIButton *tmpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [self.bottomBar addSubview:tmpBtn];
+//        tmpBtn.tag = i;
+//        tmpBtn.backgroundColor = [UIColor clearColor];
+//        tmpBtn.frame = CGRectMake((SCREEN_WIDTH/3.0)*i, 0, SCREEN_WIDTH/3.0, 50);
+//        [tmpBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//        [tmpBtn setTitleColor:[[UIColor whiteColor] colorWithAlphaComponent:0.6] forState:UIControlStateHighlighted];
+//        [tmpBtn addTarget:self action:@selector(TabItemClick:) forControlEvents:UIControlEventTouchUpInside];
+//        if (i == 0) {
+//            [tmpBtn setTitle:@"主页" forState:UIControlStateNormal];
+//        } else if (i == 1) {
+//            [tmpBtn setTitle:@"个人" forState:UIControlStateNormal];
+//        } else {
+//            [tmpBtn setTitle:@"设置" forState:UIControlStateNormal];
+//        }
+//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,9 +70,20 @@
     navVC.navigationBarHidden = YES;
     [self addChildViewController:navVC];
     
-    SettingViewController *restaurantVC=[[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    __weak __typeof(self)weakSelf = self;
+    SettingViewController *restaurantVC=[[SettingViewController alloc] init];
+//    restaurantVC.handelNavBarState = ^(BOOL hidden){
+//        if (weakSelf.selectIndex == 2) {
+//            weakSelf.navBar.hidden = hidden;
+//        }
+//        weakSelf.navBar.backgroundColor = [MCThemeManage shareInstance].bgColor;
+//        weakSelf.bottomBar.backgroundColor = [MCThemeManage shareInstance].bgColor;
+//    };
+    restaurantVC.handelPopRootView = ^(){
+        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
+    };
     navVC = [[UINavigationController alloc] initWithRootViewController:restaurantVC];
-    navVC.view.frame=CGRectMake(0, 64, rect.size.width, rect.size.height-50-64);
+        navVC.view.frame=CGRectMake(0, 64, rect.size.width, rect.size.height-50-64);
     navVC.navigationBarHidden = YES;
     [self addChildViewController:navVC];
 }

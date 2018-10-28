@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^MCHandelNavBarState)(BOOL hidden);
+typedef void(^MCHandelPopRootView)();
+
 @interface SettingViewController : UIViewController
+
+@property (nonatomic,copy) MCHandelNavBarState handelNavBarState;
+@property (nonatomic,copy) MCHandelPopRootView handelPopRootView;
 
 @end

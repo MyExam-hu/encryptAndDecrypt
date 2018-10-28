@@ -9,12 +9,18 @@
 #import <Masonry.h>
 #import "SLUIColor.h"
 #import "SLEasyDefine.h"
+#import "MCThemeManage.h"
+#import "clsOtherFun.h"
+#import "clsUserInfo.h"
 
 #ifndef encryptAndDecrypt_Prefix_pch
 #define encryptAndDecrypt_Prefix_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define TopBarHeight 44.0
+#define StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define Screen_Width [[UIScreen mainScreen] bounds].size.width
 #define Screen_Height [[UIScreen mainScreen] bounds].size.height
 
@@ -22,5 +28,8 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #define UserImagePath  [NSString stringWithFormat:@"%@/Documents/userImage.png",NSHomeDirectory()]
+
+#define PLACE_COLOR [UIColor colorWithRed:129/255.0 green:108/255.0 blue:149/255.0 alpha:1]
+#define DEFAULT_COLOR [UIColor colorWithRed:75/255.0 green:0/255.0 blue:13/255.0 alpha:1]
 
 #endif /* encryptAndDecrypt_Prefix_pch */

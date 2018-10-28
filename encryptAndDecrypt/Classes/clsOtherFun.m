@@ -118,4 +118,12 @@ static LoadingView *_newLoadingView = nil;
     NSDate *localeDate = [date  dateByAddingTimeInterval: interval];
     return localeDate;
 }
+
++(NSString*)getWSURL:(NSString *)url {
+    if (url) {
+        return [NSString stringWithFormat:@"http://localhost:8081/%@",url];
+    }
+    return [NSString stringWithFormat:@"http://localhost:8081"];
+}
+
 @end

@@ -102,4 +102,20 @@
     [db close];
 }
 
++(void)updateData:(clsUserInfo *)obj {
+    
+    NSString *doc =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)  lastObject];
+    NSString *fileName = [doc stringByAppendingPathComponent:@"Data.sqlite"];
+    
+    FMDatabase *db = [FMDatabase databaseWithPath:fileName];
+    if ([db open]){
+        
+        BOOL result = [db executeUpdate:@"update UserInfo set Account = ? where Password = ?;", obj.Account, obj.Password];
+        if (result){
+            NSLog(@"更新数据成功");
+        }
+    }
+    [db close];
+}
+
 @end
