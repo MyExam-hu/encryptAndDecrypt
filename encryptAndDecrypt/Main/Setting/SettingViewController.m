@@ -27,6 +27,7 @@
     if (self.handelNavBarState) {
         self.handelNavBarState(NO);
     }
+    [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -94,6 +95,7 @@
         //副标题样式
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:str];
     }
+    cell.textLabel.font = [UIFont systemFontOfSize:[MCThemeManage shareInstance].fontSize];
     ///<4.>设置单元格上显示的文字信息
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
@@ -158,7 +160,7 @@
  *  点击单元格触发该方法
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *ctrl = nil;
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
@@ -168,6 +170,7 @@
         } else if (indexPath.row == 2) {
             ctrl = [[MCChangePasswordViewController alloc] init];
         } else if (indexPath.row == 3) {
+            // 一键生成密码
             return;
         }
         
@@ -176,7 +179,21 @@
             ctrl = [[MCAboutViewController alloc] init];
         } else if (indexPath.row == 1) {
             ctrl = [[MCFeedbackViewController alloc] init];
-        } else if (indexPath.row == 2) {
+        } else if (indexPath.row == 2) { // 退出登录
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            NSString *selectCellStr = cell.textLabel.text;
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:selectCellStr preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            }];
+            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self.navigationController popToRootViewControllerAnimated:YES];
+                if (self.handelPopRootView) {
+                    self.handelPopRootView();
+                }
+            }];
+            [alertController addAction:cancelAction];
+            [alertController addAction:sureAction];
+            [self presentViewController:alertController animated:YES completion:nil];
             return;
         }
     }
@@ -184,14 +201,6 @@
     if (ctrl) {
         [self.navigationController pushViewController:ctrl animated:YES];
     }
-    
-    
-//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//    NSString *selectCellStr = cell.textLabel.text;
-//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:selectCellStr preferredStyle:UIAlertControllerStyleAlert];
-//    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
-//    [alertController addAction:action];
-//    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 

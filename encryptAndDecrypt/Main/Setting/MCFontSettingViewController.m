@@ -135,6 +135,7 @@
     }
     
     [MCThemeManage shareInstance].fontSize = fontSize;
+    [self topBarBack:nil];
 }
 
 

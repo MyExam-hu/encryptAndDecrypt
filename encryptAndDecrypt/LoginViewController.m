@@ -16,8 +16,6 @@
 #import "clsTableInfo.h"
 #import "clsWebServices.h"
 
-#define PLACE_COLOR [UIColor colorWithRed:129/255.0 green:108/255.0 blue:149/255.0 alpha:1]
-
 @interface LoginViewController ()
 
 @property (copy, nonatomic) NSString *password;
@@ -34,6 +32,11 @@
 @end
 
 @implementation LoginViewController
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.passwordTextField.text = nil;
+}
 
 - (void)viewDidLoad {
     
@@ -71,16 +74,16 @@
     
     if (![clsOtherFun theTableIsExist:USER_ENCRYPTINFO_TABLE]) {
         [clsUserEncryptInfo createTable];
-        for (int i=0; i<5; i++) {
-            clsUserEncryptInfo *obj=[[clsUserEncryptInfo alloc] init];
-            obj.Title=[NSString stringWithFormat:@"qq%i",i];
-            obj.Content=[AES encrypt:@"23333asdjawsklfhjdsjkhufjjdsfdstnrbrtertfhjrthedrfgdfger" password:self.password];
-            obj.UserID=1;
-            obj.Status=true;
-            obj.EncryptAccount=[AES encrypt:@"407475190" password:self.password];
-            obj.EncryptPasswork=[AES encrypt:@"Aa123456" password:self.password];
-            [clsUserEncryptInfo insertData:obj];
-        }
+//        for (int i=0; i<5; i++) {
+//            clsUserEncryptInfo *obj=[[clsUserEncryptInfo alloc] init];
+//            obj.Title=[NSString stringWithFormat:@"qq%i",i];
+//            obj.Content=[AES encrypt:@"23333asdjawsklfhjdsjkhufjjdsfdstnrbrtertfhjrthedrfgdfger" password:self.password];
+//            obj.UserID=1;
+//            obj.Status=true;
+//            obj.EncryptAccount=[AES encrypt:@"407475190" password:self.password];
+//            obj.EncryptPasswork=[AES encrypt:@"Aa123456" password:self.password];
+//            [clsUserEncryptInfo insertData:obj];
+//        }
     }
     [clsUserEncryptInfo selectData];
     
@@ -88,10 +91,26 @@
     [self.webServices controlSDKSwitch];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)signinBtnClick:(id)sender {
+    [clsOtherFun showLoadingView:@"loading......"];
+    NSString *accountStr=self.userNameTextField.text;
+    NSString *passwordStr=[clsOtherFun md5Encrypt:self.passwordTextField.text];
+    if (accountStr.length && passwordStr.length) { // 注册登录
+        clsUserInfo *obj=[[clsUserInfo alloc] init];
+        obj.Status=true;
+        obj.Account=accountStr;
+        obj.Password=passwordStr;
+        [clsUserInfo insertData:obj];
+        
+        MainViewController *mainVC=[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+        [self.navigationController pushViewController:mainVC animated:YES];
+    } else {
+        NSLog(@"注册失败");
+    }
+    [clsOtherFun hideLoadingView];
+    
 }
+
 
 - (IBAction)loginBtnClick:(id)sender {
     [self.view endEditing:YES];
@@ -105,17 +124,17 @@
 //    }
     
     [clsOtherFun showLoadingView:@"loading......"];
-//    NSString *accountStr=self.userNameTextField.text;
-//    NSString *passwordStr=[clsOtherFun md5Encrypt:self.passwordTextField.text];
-    NSString *accountStr=@"blue";
-    NSString *passwordStr=[clsOtherFun md5Encrypt:@"Aa123456"];
+    NSString *accountStr=self.userNameTextField.text;
+    NSString *passwordStr=[clsOtherFun md5Encrypt:self.passwordTextField.text];
+//    NSString *accountStr=@"blue";
+//    NSString *passwordStr=[clsOtherFun md5Encrypt:@"Aa123456"];
     NSMutableArray *array=[clsUserInfo selectDataWhere:accountStr :passwordStr];
-    if ([array count]>0) {
+    if ([array count]>0) { // 登录
         NSLog(@"登录成功");
         [clsOtherFun hideLoadingView];
         MainViewController *mainVC=[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
         [self.navigationController pushViewController:mainVC animated:YES];
-    }else{
+    } else {
         NSLog(@"登录失败");
         [clsOtherFun hideLoadingView];
     }

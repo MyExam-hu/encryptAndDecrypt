@@ -26,7 +26,7 @@ static MCThemeManage* _instance = nil;
 
     if (self=[super init]) {
         
-        _bgColor = [UIColor blackColor];
+        _bgColor = PLACE_COLOR;
         _textColor = [UIColor blackColor];
         _fontSize = 17.0;
         

@@ -10,6 +10,8 @@
 #import "SLUIColor.h"
 #import "SLEasyDefine.h"
 #import "MCThemeManage.h"
+#import "clsOtherFun.h"
+#import "clsUserInfo.h"
 
 #ifndef encryptAndDecrypt_Prefix_pch
 #define encryptAndDecrypt_Prefix_pch
@@ -26,5 +28,8 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #define UserImagePath  [NSString stringWithFormat:@"%@/Documents/userImage.png",NSHomeDirectory()]
+
+#define PLACE_COLOR [UIColor colorWithRed:129/255.0 green:108/255.0 blue:149/255.0 alpha:1]
+#define DEFAULT_COLOR [UIColor colorWithRed:75/255.0 green:0/255.0 blue:13/255.0 alpha:1]
 
 #endif /* encryptAndDecrypt_Prefix_pch */

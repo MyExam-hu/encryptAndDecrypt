@@ -100,6 +100,19 @@
 }
 
 - (void)submitBtnAction:(UIButton *)sender {
+    
+    if (self.textField.text.length) {
+        NSArray *tmpSelectArr = [NSArray arrayWithArray:[clsUserInfo selectData]];
+        clsUserInfo *tmpInfo = [tmpSelectArr lastObject];
+        NSLog(@"%@",tmpInfo);
+        clsUserInfo *updateInfo = [[clsUserInfo alloc] init];
+        updateInfo.Status = YES;
+        updateInfo.Account = tmpInfo.Account;
+        NSString *passwordStr = [clsOtherFun md5Encrypt:self.textField.text];
+        updateInfo.Password = passwordStr;
+        [clsUserInfo updateData:updateInfo];
+    }
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

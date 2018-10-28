@@ -26,7 +26,7 @@
 
 - (void)setupDatas {
     
-    self.arrayDS = [NSMutableArray arrayWithObjects:[[UIColor redColor] colorWithAlphaComponent:0.5], [[UIColor blueColor] colorWithAlphaComponent:0.5],[[UIColor orangeColor] colorWithAlphaComponent:0.5],[[UIColor purpleColor] colorWithAlphaComponent:0.5],[[UIColor blackColor] colorWithAlphaComponent:0.5],nil];
+    self.arrayDS = [NSMutableArray arrayWithObjects:[[UIColor redColor] colorWithAlphaComponent:0.5], [[UIColor blueColor] colorWithAlphaComponent:0.5],[[UIColor orangeColor] colorWithAlphaComponent:0.5],[[UIColor purpleColor] colorWithAlphaComponent:0.5],[[UIColor blackColor] colorWithAlphaComponent:0.5],PLACE_COLOR, nil];
 }
 
 - (void)setupSubviews {
@@ -51,6 +51,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.showsVerticalScrollIndicator = NO;
+//    self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 10, 0);
     
     [self.view addSubview:self.tableView];
 }
@@ -68,16 +69,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * str = @"cellStr";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:str];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
     if (cell == nil) {
         //副标题样式
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:str];
     }
     
-    cell.backgroundColor = self.arrayDS[indexPath.row];
-    cell.layer.cornerRadius = 10.0;
-    cell.layer.masksToBounds = YES;
-    
+    UIView *tmpContent = [[UIView alloc] initWithFrame:CGRectMake(10, 10, SCREEN_WIDTH-20, 180)];
+    tmpContent.backgroundColor = self.arrayDS[indexPath.row];
+    tmpContent.layer.cornerRadius = 10.0;
+    tmpContent.layer.masksToBounds = YES;
+    [cell.contentView addSubview:tmpContent];
+//    cell.contentInset = UIEdgeInsetsMake(10, 10, 10, 10); //CGRectMake(10, 10, SCREEN_WIDTH-20, 180);
+   
     return cell;
 }
 
@@ -94,8 +98,8 @@
 #pragma UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     [MCThemeManage shareInstance].bgColor = self.arrayDS[indexPath.row];
+    [self topBarBack:nil];
 }
 
 
