@@ -49,9 +49,13 @@
     navVC.navigationBarHidden = YES;
     [self addChildViewController:navVC];
     
-    SettingViewController *restaurantVC=[[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    __weak __typeof(self)weakSelf = self;
+    SettingViewController *restaurantVC=[[SettingViewController alloc] init];
+    restaurantVC.handelNavBarState = ^(BOOL hidden){
+        weakSelf.navBar.hidden = hidden;
+    };
     navVC = [[UINavigationController alloc] initWithRootViewController:restaurantVC];
-    navVC.view.frame=CGRectMake(0, 64, rect.size.width, rect.size.height-50-64);
+    //    navVC.view.frame=CGRectMake(0, 64, rect.size.width, rect.size.height-50-64);
     navVC.navigationBarHidden = YES;
     [self addChildViewController:navVC];
 }
@@ -64,10 +68,16 @@
     self.selectIndex=sender.tag;
     [self.currentController popToRootViewControllerAnimated:NO];
     
+//    self.navBar.hidden = NO;
+//    if (self.selectIndex > 0) {
+//        self.navBar.hidden = YES;
+//    }
+    
     [self transitionFromViewController:self.currentController toViewController:self.childViewControllers[self.selectIndex] duration:0.3 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
     }  completion:^(BOOL finished) {
         self.currentController=self.childViewControllers[self.selectIndex];
         self.contentView=self.currentController.view;
+        [self.view bringSubviewToFront:self.navBar];
     }];
 }
 - (IBAction)btnAddClick:(id)sender {

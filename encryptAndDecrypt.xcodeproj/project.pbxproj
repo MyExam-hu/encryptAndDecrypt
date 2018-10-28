@@ -87,6 +87,13 @@
 		B4AA52142178898200A4ABD5 /* SLUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA52132178898200A4ABD5 /* SLUIColor.m */; };
 		B4AA5217217889F100A4ABD5 /* FCHRefreshIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA5216217889F100A4ABD5 /* FCHRefreshIconView.m */; };
 		B4AA521D21788A5E00A4ABD5 /* UIImage+FCHRotateFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA521C21788A5E00A4ABD5 /* UIImage+FCHRotateFlip.m */; };
+		C4FF8B902185723A00359462 /* MCFontSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B842185723900359462 /* MCFontSettingViewController.m */; };
+		C4FF8B912185723A00359462 /* MCSkipSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B852185723900359462 /* MCSkipSwitchViewController.m */; };
+		C4FF8B922185723A00359462 /* MCChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B882185723900359462 /* MCChangePasswordViewController.m */; };
+		C4FF8B932185723A00359462 /* MCCustomTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B892185723900359462 /* MCCustomTopBar.m */; };
+		C4FF8B942185723A00359462 /* MCFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B8C2185723A00359462 /* MCFeedbackViewController.m */; };
+		C4FF8B952185723A00359462 /* MCAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B8E2185723A00359462 /* MCAboutViewController.m */; };
+		C4FF8B9A2185736100359462 /* MCThemeManage.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FF8B982185736100359462 /* MCThemeManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -240,6 +247,20 @@
 		B4AA522121788C5B00A4ABD5 /* SLFitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLFitHeader.h; sourceTree = "<group>"; };
 		B4AA522221788C5B00A4ABD5 /* SLDelegateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDelegateHeader.h; sourceTree = "<group>"; };
 		C08CE06C92EFBAB6F8D02074 /* Pods-encryptAndDecrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptAndDecrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		C4FF8B842185723900359462 /* MCFontSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFontSettingViewController.m; sourceTree = "<group>"; };
+		C4FF8B852185723900359462 /* MCSkipSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSkipSwitchViewController.m; sourceTree = "<group>"; };
+		C4FF8B862185723900359462 /* MCSkipSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSkipSwitchViewController.h; sourceTree = "<group>"; };
+		C4FF8B872185723900359462 /* MCCustomTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCustomTopBar.h; sourceTree = "<group>"; };
+		C4FF8B882185723900359462 /* MCChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCChangePasswordViewController.m; sourceTree = "<group>"; };
+		C4FF8B892185723900359462 /* MCCustomTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCustomTopBar.m; sourceTree = "<group>"; };
+		C4FF8B8A2185723A00359462 /* MCChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCChangePasswordViewController.h; sourceTree = "<group>"; };
+		C4FF8B8B2185723A00359462 /* MCAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAboutViewController.h; sourceTree = "<group>"; };
+		C4FF8B8C2185723A00359462 /* MCFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFeedbackViewController.m; sourceTree = "<group>"; };
+		C4FF8B8D2185723A00359462 /* MCFontSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFontSettingViewController.h; sourceTree = "<group>"; };
+		C4FF8B8E2185723A00359462 /* MCAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAboutViewController.m; sourceTree = "<group>"; };
+		C4FF8B8F2185723A00359462 /* MCFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFeedbackViewController.h; sourceTree = "<group>"; };
+		C4FF8B982185736100359462 /* MCThemeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCThemeManage.m; sourceTree = "<group>"; };
+		C4FF8B992185736100359462 /* MCThemeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCThemeManage.h; sourceTree = "<group>"; };
 		C9BCA243183E6806B9E5A617 /* libPods-encryptAndDecrypt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-encryptAndDecrypt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -353,8 +374,9 @@
 				B42D63F91CBDD9A500284E04 /* Assets.xcassets */,
 				B42D63FB1CBDD9A500284E04 /* LaunchScreen.storyboard */,
 				B42D63FE1CBDD9A500284E04 /* Info.plist */,
-				B4AA521921788A3100A4ABD5 /* Categories */,
 				B444730A1CBF6406005B8662 /* Main */,
+				C4FF8B972185734100359462 /* Unity */,
+				B4AA521921788A3100A4ABD5 /* Categories */,
 				B42D640A1CBE23C600284E04 /* Classes */,
 				B42D640B1CBE285000284E04 /* Lib */,
 				B42D63ED1CBDD9A500284E04 /* Supporting Files */,
@@ -566,6 +588,17 @@
 		B444732F1CBF6FBF005B8662 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				C4FF8B962185727C00359462 /* View */,
+				C4FF8B8B2185723A00359462 /* MCAboutViewController.h */,
+				C4FF8B8E2185723A00359462 /* MCAboutViewController.m */,
+				C4FF8B8A2185723A00359462 /* MCChangePasswordViewController.h */,
+				C4FF8B882185723900359462 /* MCChangePasswordViewController.m */,
+				C4FF8B8F2185723A00359462 /* MCFeedbackViewController.h */,
+				C4FF8B8C2185723A00359462 /* MCFeedbackViewController.m */,
+				C4FF8B8D2185723A00359462 /* MCFontSettingViewController.h */,
+				C4FF8B842185723900359462 /* MCFontSettingViewController.m */,
+				C4FF8B862185723900359462 /* MCSkipSwitchViewController.h */,
+				C4FF8B852185723900359462 /* MCSkipSwitchViewController.m */,
 				B444733A1CBF7048005B8662 /* SettingViewController.h */,
 				B444733B1CBF7048005B8662 /* SettingViewController.m */,
 				B444733C1CBF7048005B8662 /* SettingViewController.xib */,
@@ -635,6 +668,24 @@
 				B4AA522021788C5B00A4ABD5 /* SLSecureHeader.h */,
 			);
 			path = SLEasyDefine;
+			sourceTree = "<group>";
+		};
+		C4FF8B962185727C00359462 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF8B872185723900359462 /* MCCustomTopBar.h */,
+				C4FF8B892185723900359462 /* MCCustomTopBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4FF8B972185734100359462 /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF8B992185736100359462 /* MCThemeManage.h */,
+				C4FF8B982185736100359462 /* MCThemeManage.m */,
+			);
+			path = Unity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -754,10 +805,13 @@
 				B44472ED1CBF2756005B8662 /* MJExtensionConst.m in Sources */,
 				B44472F01CBF2756005B8662 /* MJPropertyKey.m in Sources */,
 				B4AA520D217886F800A4ABD5 /* FCHVarietyStyleLoadingView.m in Sources */,
+				C4FF8B902185723A00359462 /* MCFontSettingViewController.m in Sources */,
+				C4FF8B942185723A00359462 /* MCFeedbackViewController.m in Sources */,
 				5F1C62BF217CB598006760F2 /* clsResponseResult.m in Sources */,
 				B44472F41CBF2756005B8662 /* NSObject+MJKeyValue.m in Sources */,
 				B44C80AE1CE9A827005B9440 /* MBProgressHUD.m in Sources */,
 				B42D63F21CBDD9A500284E04 /* AppDelegate.m in Sources */,
+				C4FF8B912185723A00359462 /* MCSkipSwitchViewController.m in Sources */,
 				B4AA520B217886F800A4ABD5 /* FCHLoadingStateView.m in Sources */,
 				B44472FF1CBF35B3005B8662 /* clsOtherFun.m in Sources */,
 				B42D641B1CBE285000284E04 /* FMDatabasePool.m in Sources */,
@@ -767,7 +821,9 @@
 				B4AA520C217886F800A4ABD5 /* FCHLoadingView.m in Sources */,
 				B4AA5217217889F100A4ABD5 /* FCHRefreshIconView.m in Sources */,
 				B44472F61CBF2756005B8662 /* NSString+MJExtension.m in Sources */,
+				C4FF8B932185723A00359462 /* MCCustomTopBar.m in Sources */,
 				B44C12601CDB49A0000AE969 /* NoteViewController.m in Sources */,
+				C4FF8B9A2185736100359462 /* MCThemeManage.m in Sources */,
 				1622873A217C799A00F06BD7 /* JPUserViewController.m in Sources */,
 				B4AA520A217886F800A4ABD5 /* FCHCameraLoadingView.m in Sources */,
 				16E2D588217C9F32007D756A /* JPSetNewNameOrSignatureVC.m in Sources */,
@@ -786,8 +842,10 @@
 				B444731F1CBF68D4005B8662 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				B44C80B11CE9B5B1005B9440 /* AddDataView.m in Sources */,
 				16228741217C7B0200F06BD7 /* userTableViewCell.m in Sources */,
+				C4FF8B922185723A00359462 /* MCChangePasswordViewController.m in Sources */,
 				B4AA521D21788A5E00A4ABD5 /* UIImage+FCHRotateFlip.m in Sources */,
 				B444732C1CBF6CE2005B8662 /* NSString+Base64.m in Sources */,
+				C4FF8B952185723A00359462 /* MCAboutViewController.m in Sources */,
 				B42D641C1CBE285000284E04 /* FMDatabaseQueue.m in Sources */,
 				B444733D1CBF7048005B8662 /* SettingViewController.m in Sources */,
 				B42D64071CBDD9D600284E04 /* LoginViewController.m in Sources */,

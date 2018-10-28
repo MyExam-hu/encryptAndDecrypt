@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^MCHandelNavBarState)(BOOL hidden);
+
 @interface SettingViewController : UIViewController
+
+@property (nonatomic,copy) MCHandelNavBarState handelNavBarState;
 
 @end
