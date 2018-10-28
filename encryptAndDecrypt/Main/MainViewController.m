@@ -27,6 +27,7 @@
     self.contentView=nav.view;
     [self.view addSubview: self.contentView];
     self.currentController=[self.childViewControllers firstObject];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,16 +69,12 @@
     self.selectIndex=sender.tag;
     [self.currentController popToRootViewControllerAnimated:NO];
     
-//    self.navBar.hidden = NO;
-//    if (self.selectIndex > 0) {
-//        self.navBar.hidden = YES;
-//    }
-    
     [self transitionFromViewController:self.currentController toViewController:self.childViewControllers[self.selectIndex] duration:0.3 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
     }  completion:^(BOOL finished) {
         self.currentController=self.childViewControllers[self.selectIndex];
         self.contentView=self.currentController.view;
         [self.view bringSubviewToFront:self.navBar];
+//        [self.view bringSubviewToFront:self.bottomBar];
     }];
 }
 - (IBAction)btnAddClick:(id)sender {
