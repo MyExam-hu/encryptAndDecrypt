@@ -102,20 +102,22 @@
     [db close];
 }
 
-+(void)updateData:(clsUserInfo *)obj {
++(BOOL)updatePwdWith:(clsUserInfo *)changeObj checkObj:(clsUserInfo *)checkObj {
     
     NSString *doc =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)  lastObject];
     NSString *fileName = [doc stringByAppendingPathComponent:@"Data.sqlite"];
     
     FMDatabase *db = [FMDatabase databaseWithPath:fileName];
     if ([db open]){
-        
-        BOOL result = [db executeUpdate:@"update UserInfo set Account = ? where Password = ?;", obj.Account, obj.Password];
+        NSString *sqlStr=[NSString stringWithFormat:@"update UserInfo set Account = '%@',Password = '%@' where Account = '%@' and Password = '%@'", changeObj.Account, changeObj.Password,checkObj.Account,checkObj.Password];
+        BOOL result = [db executeUpdate:sqlStr];
         if (result){
             NSLog(@"更新数据成功");
+            return YES;
         }
     }
     [db close];
+    return NO;
 }
 
 @end

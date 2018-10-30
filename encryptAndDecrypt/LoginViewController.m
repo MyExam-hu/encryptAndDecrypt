@@ -124,10 +124,10 @@
 //    }
     
     [clsOtherFun showLoadingView:@"loading......"];
-//    NSString *accountStr=self.userNameTextField.text;
-//    NSString *passwordStr=[clsOtherFun md5Encrypt:self.passwordTextField.text];
-    NSString *accountStr=@"blue";
-    NSString *passwordStr=[clsOtherFun md5Encrypt:@"Aa123456"];
+    NSString *accountStr=self.userNameTextField.text;
+    NSString *passwordStr=[clsOtherFun md5Encrypt:self.passwordTextField.text];
+//    NSString *accountStr=@"blue";
+//    NSString *passwordStr=[clsOtherFun md5Encrypt:@"Aa123456"];
     NSMutableArray *array=[clsUserInfo selectDataWhere:accountStr :passwordStr];
     if ([array count]>0) { // 登录
         NSLog(@"登录成功");

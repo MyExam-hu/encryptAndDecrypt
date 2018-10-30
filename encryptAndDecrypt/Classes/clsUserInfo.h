@@ -21,6 +21,6 @@
 +(NSMutableArray *)selectData;
 +(NSMutableArray *)selectDataWhere :(NSString *)accountStr :(NSString *)passwordStr;
 +(void)insertData :(clsUserInfo *)obj;
-+(void)updateData:(clsUserInfo *)obj;
++(BOOL)updatePwdWith:(clsUserInfo *)changeObj checkObj:(clsUserInfo *)checkObj;
 
 @end
