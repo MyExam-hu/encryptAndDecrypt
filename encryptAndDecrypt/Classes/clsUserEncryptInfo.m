@@ -36,7 +36,7 @@
     
     FMDatabase *db = [FMDatabase databaseWithPath:fileName];
     if ([db open]){
-        NSString *sqlStr=[NSString stringWithFormat:@"create table %@ (id integer primary key AutoIncrement,Title text not null, Content text, Status bool not null, UserID integer, EncryptAccount text, EncryptPasswork text, createDate text, updateDate text)",USER_ENCRYPTINFO_TABLE];
+        NSString *sqlStr=[NSString stringWithFormat:@"create table %@ (id integer primary key AutoIncrement,Title text, Content text, Status bool not null, UserID integer, EncryptAccount text, EncryptPasswork text, createDate text, updateDate text)",USER_ENCRYPTINFO_TABLE];
         BOOL result = [db executeUpdate:sqlStr];
         if (result)
         {
@@ -141,6 +141,23 @@
     }
     [db close];
     return results;
+}
+
++(NSString *)randomGeneratedPwd {
+    NSString *numStr = [clsUserEncryptInfo randomStringWithLength:7 String:@"1234567890"];
+    NSString *capitalLettersStr = [clsUserEncryptInfo randomStringWithLength:3 String:@"ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+    NSString *lowercaseLettersStr = [clsUserEncryptInfo randomStringWithLength:3 String:@"abcdefghijklmnopqrstuvwxyz"];
+    NSString *countStr = [NSString stringWithFormat:@"%@%@%@",capitalLettersStr,lowercaseLettersStr,numStr];
+    return countStr;
+}
+
++(NSString *)randomStringWithLength:(NSInteger)len String:(NSString *)letters {
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
+    
+    for (NSInteger i = 0; i < len; i++) {
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform((uint32_t)[letters length])]];
+    }
+    return randomString;
 }
 
 @end
