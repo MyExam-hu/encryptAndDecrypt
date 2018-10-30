@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
@@ -31,7 +35,7 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-Kp-xhC">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="533"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="q1g-P5-29N">
                                     <rect key="frame" x="51" y="70" width="218" height="53"/>
@@ -45,8 +49,8 @@
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCP-RX-aeO">
                                             <rect key="frame" x="42" y="10" width="204" height="30"/>
-                                            <color key="backgroundColor" red="0.12549019607843137" green="0.054901960784313725" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.12549019607843137" green="0.054901960784313725" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -57,7 +61,7 @@
                                             </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.12549019607843137" green="0.054901960784313725" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.12549019607843137" green="0.054901960784313725" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="OCP-RX-aeO" secondAttribute="trailing" constant="4" id="K5a-kj-Qtm"/>
                                         <constraint firstItem="yHw-nn-w1q" firstAttribute="top" secondItem="rg3-jY-3bu" secondAttribute="top" constant="4" id="LZD-KP-hRb"/>
@@ -73,8 +77,8 @@
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FzO-3c-8f8">
                                             <rect key="frame" x="42" y="10" width="204" height="30"/>
-                                            <color key="backgroundColor" red="0.12549019610000001" green="0.054901960780000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.12549019610000001" green="0.054901960780000002" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -85,7 +89,7 @@
                                             </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.12549019610000001" green="0.054901960780000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.12549019610000001" green="0.054901960780000002" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="FzO-3c-8f8" firstAttribute="centerY" secondItem="gFU-A4-kuq" secondAttribute="centerY" id="32s-dh-HbE"/>
                                         <constraint firstItem="YXT-lq-Qyd" firstAttribute="leading" secondItem="gFU-A4-kuq" secondAttribute="leading" constant="4" id="73G-5W-5pv"/>
@@ -102,7 +106,7 @@
                                         <constraint firstAttribute="height" constant="50" id="sV7-0A-U4H"/>
                                     </constraints>
                                     <state key="normal" title="Log In" backgroundImage="5">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <state key="selected" backgroundImage="5"/>
                                     <connections>
@@ -112,7 +116,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJC-2b-tZV">
                                     <rect key="frame" x="152" y="369" width="16" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.51372549019607838" green="0.43137254901960786" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.51372549019607838" green="0.43137254901960786" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-Ns-QFx">
@@ -120,11 +124,14 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="34O-pJ-zL6"/>
                                     </constraints>
-                                    <state key="normal" backgroundImage="facebook"/>
+                                    <state key="normal" title="Sign In" backgroundImage="5"/>
                                     <state key="selected" backgroundImage="facebook"/>
+                                    <connections>
+                                        <action selector="signinBtnClick:" destination="-1" eventType="touchUpInside" id="EkA-dD-sY7"/>
+                                    </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="gm3-Ns-QFx" firstAttribute="top" secondItem="DJC-2b-tZV" secondAttribute="bottom" constant="8" id="0CO-kb-gGZ"/>
                                 <constraint firstAttribute="trailing" secondItem="gm3-Ns-QFx" secondAttribute="trailing" constant="35" id="3KU-2k-LH6"/>
@@ -155,7 +162,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="L5o-Fm-VgB" secondAttribute="bottom" id="762-5n-8l1"/>
                 <constraint firstItem="L5o-Fm-VgB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7cz-yh-9BT"/>
@@ -166,7 +173,7 @@
                 <constraint firstAttribute="trailing" secondItem="tzA-Kp-xhC" secondAttribute="trailing" id="oBY-lc-QFG"/>
                 <constraint firstItem="tzA-Kp-xhC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xGK-jG-WeA"/>
             </constraints>
-            <point key="canvasLocation" x="340" y="436"/>
+            <point key="canvasLocation" x="-77" y="427"/>
         </view>
     </objects>
     <resources>

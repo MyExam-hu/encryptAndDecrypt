@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="navBar" destination="9Zf-r4-ngg" id="jTB-BG-a5B"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,39 +21,39 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQY-Eq-Ews">
-                    <rect key="frame" x="0.0" y="518" width="107" height="50"/>
-                    <color key="backgroundColor" red="0.23137254901960785" green="0.14117647058823529" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="518" width="106.5" height="50"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.14117647058823529" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Ja0-72-qva"/>
                     </constraints>
                     <state key="normal" title="主页">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="TabItemClick:" destination="-1" eventType="touchUpInside" id="vCG-Jd-Nic"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5z-HZ-zqg">
-                    <rect key="frame" x="107" y="518" width="106" height="50"/>
-                    <color key="backgroundColor" red="0.23137254901960785" green="0.14117647058823529" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="106.5" y="518" width="107" height="50"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.14117647058823529" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="aec-za-nGJ"/>
                     </constraints>
                     <state key="normal" title="个人">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="TabItemClick:" destination="-1" eventType="touchUpInside" id="cOv-zX-nam"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOW-St-FjY">
-                    <rect key="frame" x="213" y="518" width="107" height="50"/>
-                    <color key="backgroundColor" red="0.23137254901960785" green="0.14117647058823529" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="213.5" y="518" width="106.5" height="50"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.14117647058823529" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="2uI-I2-jJb"/>
                     </constraints>
                     <state key="normal" title="设置">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="TabItemClick:" destination="-1" eventType="touchUpInside" id="LCO-K6-M0f"/>
@@ -64,7 +69,7 @@
                                 <constraint firstAttribute="width" constant="62" id="ZAa-7b-dzC"/>
                             </constraints>
                             <state key="normal" title="添加">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="btnAddClick:" destination="-1" eventType="touchUpInside" id="pjS-8I-2Ya"/>
@@ -77,14 +82,14 @@
                                 <constraint firstAttribute="height" constant="38" id="TcJ-x5-zb8"/>
                             </constraints>
                             <state key="normal" image="icon_whitesearch">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="btnSearchClick:" destination="-1" eventType="touchUpInside" id="kmS-U3-Nd5"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.23137254900000001" green="0.14117647059999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.23291310667991638" green="0.13817724585533142" blue="0.30757385492324829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="0Mh-IU-kbL"/>
                         <constraint firstAttribute="bottom" secondItem="zIM-UT-4oC" secondAttribute="bottom" id="I6Y-vu-uic"/>
@@ -94,7 +99,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="kOW-St-FjY" secondAttribute="trailing" id="3jy-ZS-YhY"/>
                 <constraint firstAttribute="trailing" secondItem="9Zf-r4-ngg" secondAttribute="trailing" id="3uM-fl-hyD"/>
@@ -111,7 +116,7 @@
                 <constraint firstAttribute="bottom" secondItem="kOW-St-FjY" secondAttribute="bottom" id="r64-i3-XOC"/>
                 <constraint firstAttribute="bottom" secondItem="u5z-HZ-zqg" secondAttribute="bottom" id="z1m-cW-WbI"/>
             </constraints>
-            <point key="canvasLocation" x="340" y="314"/>
+            <point key="canvasLocation" x="-100" y="33"/>
         </view>
     </objects>
     <resources>
