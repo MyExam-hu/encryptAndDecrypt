@@ -32,15 +32,6 @@ DEPENDENCIES:
   - SDWebImage
   - YYKit
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - GRMustache
-    - JRSwizzle
-    - Masonry
-    - SDWebImage
-    - YYKit
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   GRMustache: ebe6104fd30a6d22c1f36af131e19e2dbf7cd292
@@ -51,4 +42,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 46199f744b1694b465a82bcbaf597511e1276810
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0
