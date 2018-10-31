@@ -12,6 +12,8 @@
 #import "SettingViewController.h"
 #import "AddDataView.h"
 #import "SearchView.h"
+#import "clsUserEncryptInfo.h"
+#import "GeneratedPwdView.h"
 
 @interface MainViewController ()
 
@@ -102,11 +104,13 @@
         self.contentView=self.currentController.view;
     }];
 }
+
 - (IBAction)btnAddClick:(id)sender {
     AddDataView *addView=[[AddDataView alloc] init];
     [addView show:^(NSString *code){
     }];
 }
+
 - (IBAction)btnSearchClick:(id)sender {
     SearchView *searchView=[[SearchView alloc] initWithFrame:self.view.bounds];
     searchView.parentVC=self;
@@ -116,6 +120,12 @@
         searchView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
         searchView.alpha=1;
         [self.view bringSubviewToFront:searchView];
+    }];
+}
+- (IBAction)changePWDClick:(UIButton *)sender {
+    GeneratedPwdView *generatedPwdView = [[GeneratedPwdView alloc] initWithFrame:self.view.bounds];
+    [generatedPwdView show:^(NSString *code) {
+        [clsOtherFun showMessageByHUD:@"添加成功，密码已复制到黏贴板" delay:2.0];
     }];
 }
 

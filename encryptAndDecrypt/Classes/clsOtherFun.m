@@ -84,6 +84,10 @@ static LoadingView *_newLoadingView = nil;
 }
 
 +(void) showMessageByHUD:(NSString *)message{
+    [clsOtherFun showMessageByHUD:message delay:1];
+}
+
++(void) showMessageByHUD:(NSString *)message delay:(NSTimeInterval)delay{
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.detailsLabelText = message;
@@ -92,7 +96,7 @@ static LoadingView *_newLoadingView = nil;
     //    hud.cornerRadius=4.0;
     hud.removeFromSuperViewOnHide = YES;
     
-    [hud hide:YES afterDelay:1];
+    [hud hide:YES afterDelay:delay];
 }
 
 +(NSString *)dateFormatToString :(NSDate *)date{
