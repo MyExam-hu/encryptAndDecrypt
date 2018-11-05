@@ -41,6 +41,7 @@
     [self addSubview:self.lineView];
     [self addSubview:self.lineView1];
     
+    
 }
 
 -(void)setModel:(userModel *)model {

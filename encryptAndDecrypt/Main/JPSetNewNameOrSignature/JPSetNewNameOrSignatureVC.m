@@ -38,11 +38,11 @@
     
     if (_qdLabel == nil) {
         
-        _qdLabel = [[UILabel alloc]initWithFrame:CGRectMake(80, SCREEN_HEIGHT-260, SCREEN_WIDTH-160, 80)];
+        _qdLabel = [[UILabel alloc]initWithFrame:CGRectMake(80, SCREEN_HEIGHT-260, SCREEN_WIDTH-160, 58)];
         
         _qdLabel.text = @"确定";
         
-        _qdLabel.backgroundColor = [UIColor blueColor];
+        _qdLabel.backgroundColor = [UIColor colorWithRed:59/255.0 green:35/255.0 blue:78/255.0 alpha:1.0];
         
         _qdLabel.textAlignment = NSTextAlignmentCenter;
         
@@ -85,13 +85,36 @@
     
     if (self.titleTag == 0) {
         
-        [[NSUserDefaults standardUserDefaults] setObject:self.textV.text forKey:@"kUserName"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+//        [[NSUserDefaults standardUserDefaults] setObject:self.textV.text forKey:@"kUserName"];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        NSArray *tmpSelectArr = [NSArray arrayWithArray:[clsUserInfo selectData]];
+        clsUserInfo *tmpInfo = [tmpSelectArr lastObject];
+        
+        clsUserInfo *updateInfo = [[clsUserInfo alloc] init];
+        updateInfo.Status = YES;
+        updateInfo.Account = tmpInfo.Account;
+        updateInfo.name = self.textV.text;
+        [clsUserInfo updateData:updateInfo];
+        
+        NSLog(@"d = %@",updateInfo.name);
         
     }else if (self.titleTag == 1){
         
-        [[NSUserDefaults standardUserDefaults] setObject:self.textV.text forKey:@"kUserQM"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+//        [[NSUserDefaults standardUserDefaults] setObject:self.textV.text forKey:@"kUserQM"];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        NSArray *tmpSelectArr = [NSArray arrayWithArray:[clsUserInfo selectData]];
+        clsUserInfo *tmpInfo = [tmpSelectArr lastObject];
+        
+        clsUserInfo *updateInfo = [[clsUserInfo alloc] init];
+        updateInfo.Status = YES;
+        updateInfo.Account = tmpInfo.Account;
+        updateInfo.gxqm = self.textV.text;
+        [clsUserInfo updateData:updateInfo];
+        
+        NSLog(@"d = %@",updateInfo.gxqm);
+
         
     }
     

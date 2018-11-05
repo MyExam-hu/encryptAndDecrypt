@@ -17,6 +17,17 @@
 @property (nonatomic, copy) NSString *Email;
 @property (nonatomic, copy) NSString *MobilePhone;
 
+/**
+ 昵称
+ */
+@property (nonatomic, copy) NSString *name;
+
+/**
+ 个性签名
+ */
+@property (nonatomic, copy) NSString *gxqm;
+
+
 +(void)createTable;
 +(NSMutableArray *)selectData;
 +(NSMutableArray *)selectDataWhere :(NSString *)accountStr :(NSString *)passwordStr;

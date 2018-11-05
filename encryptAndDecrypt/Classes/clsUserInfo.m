@@ -32,7 +32,7 @@
     
     FMDatabase *db = [FMDatabase databaseWithPath:fileName];
     if ([db open]){
-        NSString *sqlStr=[NSString stringWithFormat:@"create table %@ (id integer primary key AutoIncrement,Account text not null, Password text not null, Status bool not null, Email text, MobilePhone text)",USER_INFO_TABLE];
+        NSString *sqlStr=[NSString stringWithFormat:@"create table %@ (id integer primary key AutoIncrement,Account text not null, Password text not null, Status bool not null, Email text, MobilePhone text, name text, gxqm text)",USER_INFO_TABLE];
         BOOL result = [db executeUpdate:sqlStr];
         if (result)
         {

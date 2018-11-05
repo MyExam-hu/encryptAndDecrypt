@@ -69,6 +69,8 @@
         obj.Status=true;
         obj.Account=@"blue";
         obj.Password=[clsOtherFun md5Encrypt:@"Aa123456"];
+        obj.name = @"";
+        obj.gxqm = @"";
         [clsUserInfo insertData:obj];
     }
     

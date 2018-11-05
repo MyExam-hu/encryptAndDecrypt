@@ -63,15 +63,20 @@
     self.dataArr = [[NSMutableArray alloc]init];
     [self.dataArr removeAllObjects];
     
+    NSArray *tmpSelectArr = [NSArray arrayWithArray:[clsUserInfo selectData]];
+    clsUserInfo *tmpInfo = [tmpSelectArr lastObject];
+    
+//    [clsUserInfo updateData:updateInfo];
+    
     userModel * model1 = [[userModel alloc]init];
     model1.name = @"昵称:";
         
-    model1.content = [[NSUserDefaults standardUserDefaults] objectForKey:@"kUserName"];
+    model1.content = tmpInfo.name;
     [self.dataArr addObject:model1];
     
     userModel * model2 = [[userModel alloc]init];
     model2.name = @"签名:";
-    model2.content = [[NSUserDefaults standardUserDefaults] objectForKey:@"kUserQM"] ;
+    model2.content = tmpInfo.gxqm;
     [self.dataArr addObject:model2];
     
 }
