@@ -27,4 +27,7 @@
 +(BOOL)upDataTheOcl :(clsUserEncryptInfo *)obj;
 +(BOOL)upDadaStatus :(int)delId;
 
+//随机生成13位密码，后面再拓展大写字母，小写字母的位数
++(NSString *)randomGeneratedPwd;
+
 @end

@@ -199,7 +199,7 @@
     }
     
     if (ctrl) {
-        [self.navigationController pushViewController:ctrl animated:YES];
+        [self.parentViewController.navigationController pushViewController:ctrl animated:YES];
     }
 }
 

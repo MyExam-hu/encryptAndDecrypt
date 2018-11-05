@@ -23,6 +23,7 @@
 
 +(NSString *)getAESPassword;
 +(void) showMessageByHUD:(NSString *)message;
++(void) showMessageByHUD:(NSString *)message delay:(NSTimeInterval)delay;
 
 +(NSString *)dateFormatToString :(NSDate *)date;
 +(NSDate *)stringFormatToDate:(NSString *)pDate;

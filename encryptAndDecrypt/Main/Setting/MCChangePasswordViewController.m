@@ -100,7 +100,7 @@
 }
 
 - (void)submitBtnAction:(UIButton *)sender {
-    
+    BOOL success = NO;
     if (self.textField.text.length) {
         NSArray *tmpSelectArr = [NSArray arrayWithArray:[clsUserInfo selectData]];
         clsUserInfo *tmpInfo = [tmpSelectArr lastObject];
@@ -110,10 +110,11 @@
         updateInfo.Account = tmpInfo.Account;
         NSString *passwordStr = [clsOtherFun md5Encrypt:self.textField.text];
         updateInfo.Password = passwordStr;
-        [clsUserInfo updateData:updateInfo];
+        success = [clsUserInfo updatePwdWith:updateInfo checkObj:tmpInfo];
     }
-    
-    [self.navigationController popViewControllerAnimated:YES];
+    if (success) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)topBarBack:(UIButton *)sender {

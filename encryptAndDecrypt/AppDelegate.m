@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "clsUserEncryptInfo.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,7 @@
     [self.window makeKeyAndVisible];
     
     //ceshi
+    [clsUserEncryptInfo randomGeneratedPwd];
     return YES;
 }
 

@@ -15,6 +15,8 @@
 		3594C85B72D81485C6500047 /* libPods-encryptAndDecrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BCA243183E6806B9E5A617 /* libPods-encryptAndDecrypt.a */; };
 		5F1C62BC217CB36B006760F2 /* clsWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C62BB217CB36B006760F2 /* clsWebServices.m */; };
 		5F1C62BF217CB598006760F2 /* clsResponseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C62BD217CB597006760F2 /* clsResponseResult.m */; };
+		5FE22201218A0230000CAE96 /* GeneratedPwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE221FE218A022F000CAE96 /* GeneratedPwdView.m */; };
+		5FE22202218A0230000CAE96 /* GeneratedPwdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE221FF218A022F000CAE96 /* GeneratedPwdView.xib */; };
 		B42D63EF1CBDD9A500284E04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D63EE1CBDD9A500284E04 /* main.m */; };
 		B42D63F21CBDD9A500284E04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D63F11CBDD9A500284E04 /* AppDelegate.m */; };
 		B42D63FA1CBDD9A500284E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42D63F91CBDD9A500284E04 /* Assets.xcassets */; };
@@ -114,6 +116,9 @@
 		5F1C62BB217CB36B006760F2 /* clsWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsWebServices.m; sourceTree = "<group>"; };
 		5F1C62BD217CB597006760F2 /* clsResponseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsResponseResult.m; sourceTree = "<group>"; };
 		5F1C62BE217CB598006760F2 /* clsResponseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clsResponseResult.h; sourceTree = "<group>"; };
+		5FE221FE218A022F000CAE96 /* GeneratedPwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPwdView.m; sourceTree = "<group>"; };
+		5FE221FF218A022F000CAE96 /* GeneratedPwdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneratedPwdView.xib; sourceTree = "<group>"; };
+		5FE22200218A022F000CAE96 /* GeneratedPwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratedPwdView.h; sourceTree = "<group>"; };
 		B42D63EA1CBDD9A500284E04 /* encryptAndDecrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encryptAndDecrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42D63EE1CBDD9A500284E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B42D63F01CBDD9A500284E04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -571,6 +576,9 @@
 				B44C80AF1CE9B5B1005B9440 /* AddDataView.h */,
 				B44C80B01CE9B5B1005B9440 /* AddDataView.m */,
 				B44C80B21CE9B5C1005B9440 /* AddDataView.xib */,
+				5FE22200218A022F000CAE96 /* GeneratedPwdView.h */,
+				5FE221FE218A022F000CAE96 /* GeneratedPwdView.m */,
+				5FE221FF218A022F000CAE96 /* GeneratedPwdView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -699,6 +707,8 @@
 				B42D63E61CBDD9A400284E04 /* Sources */,
 				B42D63E71CBDD9A400284E04 /* Frameworks */,
 				B42D63E81CBDD9A400284E04 /* Resources */,
+				670A27FB39E81C1229009947 /* [CP] Embed Pods Frameworks */,
+				58E00DBEBDEA7F10AA724543 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -749,6 +759,7 @@
 			files = (
 				B44E100D1D190F990051119E /* test.js in Resources */,
 				B44473431CBF9348005B8662 /* HomeTableViewCell.xib in Resources */,
+				5FE22202218A0230000CAE96 /* GeneratedPwdView.xib in Resources */,
 				B44C125C1CDADA2F000AE969 /* ContentDetailViewController.xib in Resources */,
 				B44473071CBF3C1A005B8662 /* angle-mask@2x.png in Resources */,
 				B440BB111CEC5D6A005D0A30 /* SearchResultViewController.xib in Resources */,
@@ -790,6 +801,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		58E00DBEBDEA7F10AA724543 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670A27FB39E81C1229009947 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -812,6 +853,7 @@
 				B44C80AE1CE9A827005B9440 /* MBProgressHUD.m in Sources */,
 				B42D63F21CBDD9A500284E04 /* AppDelegate.m in Sources */,
 				C4FF8B912185723A00359462 /* MCSkipSwitchViewController.m in Sources */,
+				5FE22201218A0230000CAE96 /* GeneratedPwdView.m in Sources */,
 				B4AA520B217886F800A4ABD5 /* FCHLoadingStateView.m in Sources */,
 				B44472FF1CBF35B3005B8662 /* clsOtherFun.m in Sources */,
 				B42D641B1CBE285000284E04 /* FMDatabasePool.m in Sources */,
