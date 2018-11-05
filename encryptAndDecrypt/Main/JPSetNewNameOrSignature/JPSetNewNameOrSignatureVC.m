@@ -85,9 +85,6 @@
     
     if (self.titleTag == 0) {
         
-//        [[NSUserDefaults standardUserDefaults] setObject:self.textV.text forKey:@"kUserName"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-        
         NSArray *tmpSelectArr = [NSArray arrayWithArray:[clsUserInfo selectData]];
         clsUserInfo *tmpInfo = [tmpSelectArr lastObject];
         
@@ -95,7 +92,7 @@
         updateInfo.Status = YES;
         updateInfo.Account = tmpInfo.Account;
         updateInfo.name = self.textV.text;
-        [clsUserInfo updateData:updateInfo];
+//        [clsUserInfo updateData:updateInfo];
         
         NSLog(@"d = %@",updateInfo.name);
         
@@ -111,7 +108,7 @@
         updateInfo.Status = YES;
         updateInfo.Account = tmpInfo.Account;
         updateInfo.gxqm = self.textV.text;
-        [clsUserInfo updateData:updateInfo];
+//        [clsUserInfo updateData:updateInfo];
         
         NSLog(@"d = %@",updateInfo.gxqm);
 

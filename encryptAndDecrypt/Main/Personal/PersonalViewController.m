@@ -32,14 +32,15 @@
     [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"js"] encoding:NSUTF8StringEncoding error:nil]];
     
     
-    UIView *textV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    textV.backgroundColor = [UIColor orangeColor];
-    textV.userInteractionEnabled = YES;
-    
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickTextVeiw)];
-    [textV addGestureRecognizer:tap];
-    
-    [self.view addSubview:textV];
+    //屏蔽入口
+//    UIView *textV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+//    textV.backgroundColor = [UIColor orangeColor];
+//    textV.userInteractionEnabled = YES;
+//
+//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickTextVeiw)];
+//    [textV addGestureRecognizer:tap];
+//
+//    [self.view addSubview:textV];
     
 }
 
