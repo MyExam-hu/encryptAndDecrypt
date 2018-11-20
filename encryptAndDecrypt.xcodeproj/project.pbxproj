@@ -80,7 +80,6 @@
 		B44E100B1D18D8D70051119E /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = B44E100A1D18D8D70051119E /* template.html */; };
 		B44E100D1D190F990051119E /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = B44E100C1D190F990051119E /* test.js */; };
 		B45956331CEB00350064A183 /* clsTableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B45956321CEB00350064A183 /* clsTableInfo.m */; };
-		B4AA52002178846B00A4ABD5 /* 需求.md in Resources */ = {isa = PBXBuildFile; fileRef = B4AA51FF2178846B00A4ABD5 /* 需求.md */; };
 		B4AA520A217886F800A4ABD5 /* FCHCameraLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA5203217886F800A4ABD5 /* FCHCameraLoadingView.m */; };
 		B4AA520B217886F800A4ABD5 /* FCHLoadingStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA5205217886F800A4ABD5 /* FCHLoadingStateView.m */; };
 		B4AA520C217886F800A4ABD5 /* FCHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA5207217886F800A4ABD5 /* FCHLoadingView.m */; };
@@ -230,7 +229,6 @@
 		B45956311CEB00350064A183 /* clsTableInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clsTableInfo.h; sourceTree = "<group>"; };
 		B45956321CEB00350064A183 /* clsTableInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsTableInfo.m; sourceTree = "<group>"; };
 		B471C8A51DD9B8C100F4AF12 /* encryptAndDecrypt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "encryptAndDecrypt-Prefix.pch"; sourceTree = "<group>"; };
-		B4AA51FF2178846B00A4ABD5 /* 需求.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "需求.md"; sourceTree = "<group>"; };
 		B4AA5202217886F800A4ABD5 /* FCHCameraLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHCameraLoadingView.h; sourceTree = "<group>"; };
 		B4AA5203217886F800A4ABD5 /* FCHCameraLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCHCameraLoadingView.m; sourceTree = "<group>"; };
 		B4AA5204217886F800A4ABD5 /* FCHLoadingStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHLoadingStateView.h; sourceTree = "<group>"; };
@@ -352,7 +350,6 @@
 		B42D63E11CBDD9A400284E04 = {
 			isa = PBXGroup;
 			children = (
-				B4AA51FE2178811700A4ABD5 /* 项目文档 */,
 				B42D63EC1CBDD9A500284E04 /* encryptAndDecrypt */,
 				B42D63EB1CBDD9A500284E04 /* Products */,
 				A164367B40B90CFF3A632E59 /* Pods */,
@@ -614,14 +611,6 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		B4AA51FE2178811700A4ABD5 /* 项目文档 */ = {
-			isa = PBXGroup;
-			children = (
-				B4AA51FF2178846B00A4ABD5 /* 需求.md */,
-			);
-			path = "项目文档";
-			sourceTree = "<group>";
-		};
 		B4AA5201217886F800A4ABD5 /* HWDLoadingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -707,6 +696,8 @@
 				B42D63E61CBDD9A400284E04 /* Sources */,
 				B42D63E71CBDD9A400284E04 /* Frameworks */,
 				B42D63E81CBDD9A400284E04 /* Resources */,
+				FEB3A362A2FB510907FF2855 /* [CP] Embed Pods Frameworks */,
+				4883B94E90C1C6EDD9F54A1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -728,7 +719,8 @@
 				TargetAttributes = {
 					B42D63E91CBDD9A400284E04 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = G583SJY324;
+						DevelopmentTeam = H8WJ42JNWR;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -768,7 +760,6 @@
 				B44C12611CDB49A0000AE969 /* NoteViewController.xib in Resources */,
 				B42D63FA1CBDD9A500284E04 /* Assets.xcassets in Resources */,
 				B42D64081CBDD9D600284E04 /* LoginViewController.xib in Resources */,
-				B4AA52002178846B00A4ABD5 /* 需求.md in Resources */,
 				B444730F1CBF6437005B8662 /* MainViewController.xib in Resources */,
 				B44C80B31CE9B5C1005B9440 /* AddDataView.xib in Resources */,
 				B440BB0C1CEC15AB005D0A30 /* SearchView.xib in Resources */,
@@ -797,6 +788,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4883B94E90C1C6EDD9F54A1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB3A362A2FB510907FF2855 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptAndDecrypt/Pods-encryptAndDecrypt-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -977,13 +998,17 @@
 			baseConfigurationReference = 4F3371B4F9AAA92F9D3B8949 /* Pods-encryptAndDecrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G583SJY324;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H8WJ42JNWR;
 				GCC_PREFIX_HEADER = "encryptAndDecrypt/encryptAndDecrypt-Prefix.pch";
 				INFOPLIST_FILE = encryptAndDecrypt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zxd.item.encryptAndDecrypt;
+				PRODUCT_BUNDLE_IDENTIFIER = ruru.calculato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "加密证书2";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
@@ -991,16 +1016,20 @@
 		};
 		B42D64031CBDD9A500284E04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C65343998CEFFC977140F79 /* Pods-encryptAndDecrypt.release.xcconfig */;
+			baseConfigurationReference = 068401D846117E8131EBB31B /* Pods-encryptAndDecrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G583SJY324;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H8WJ42JNWR;
 				GCC_PREFIX_HEADER = "encryptAndDecrypt/encryptAndDecrypt-Prefix.pch";
 				INFOPLIST_FILE = encryptAndDecrypt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zxd.item.encryptAndDecrypt;
+				PRODUCT_BUNDLE_IDENTIFIER = ruru.calculato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "加密证书2";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
